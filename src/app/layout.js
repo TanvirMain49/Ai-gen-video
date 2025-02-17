@@ -3,6 +3,7 @@ import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import Provider from "./provider";
 import Header from "./dashboard/_component/Header";
+import AiShortGenFooter from "./_component/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
         <Provider>
         {children}
         </Provider>
+        <AiShortGenFooter />
       </body>
     </html>
     </ClerkProvider>
