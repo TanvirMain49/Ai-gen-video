@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button'
 import { UserButton } from '@clerk/nextjs'
+import Link from 'next/link'
 import React from 'react'
 
 export default function Header() {
@@ -9,7 +10,7 @@ export default function Header() {
         <h2 className='text-xl font-bold'>Ai-Short-Gen</h2>
       </div>
       <div className='flex items-center gap-3'>
-        <Button>Dashboard</Button>
+        <Link href="/dashboard"><Button>Dashboard</Button></Link>
         <UserButton></UserButton>
       </div>
     </div>
